@@ -6,24 +6,12 @@ $PROC='objdump -d small.elf'
 # collect information of calls
 ltrace -o calls.txt -l '*' $PROG &> /dev/null
 # analyze collected data
-cat calls.txt | sed -ne '/->/{ s/^\(.*\)->.*/\1/; p }' | sort -u
-
- 
-docker run -ti -v /location/of/your/target:/src aflplusplus/aflplusplus
+cat calls.txt | sed -ne '/->/{ s/^\(.*\)->.*/\1/; p }' | sort -u > lib_ls
 ```
 
-#### inside AFL++ docker needs :
-
-- clang/clang++
-- python2.7
-- python3.5+
-- pip3
-- pip2
-- PyPDF2
-- poppler
-
+- obtain library number
 ```shell
-curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py
-python2 get-pip.py
+wc -l lib_ls
 ```
+
 
