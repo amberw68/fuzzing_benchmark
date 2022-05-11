@@ -1,0 +1,8 @@
+tiffcp->__libc_start_main(0x402860, 2, 0x7ffce5f65818, 0x43bf90 <unfinished ...>
+tiffcp->getopt(2, 0x7ffce5f65818, "m:,:b:c:f:l:o:p:r:w:aistBLMC8xh") = -1
+tiffcp->__fprintf_chk(0x7f01d4e04540, 1, 0x43c024, 0x446560) = 107
+tiffcp->fwrite("Copy, convert, or combine TIFF f"..., 1, 2914, 0x7f01d4e04540) = 2914
+tiffcp->exit(1 <unfinished ...>
+liblzma.so.5->__cxa_finalize(0x7f01d59b4078, 0, 0, 10) = 0x7f01d4e05050
+libjbig.so.0->__cxa_finalize(0x7f01d5790080, 0, 0, 0) = 0x7f01d4e05050
++++ exited (status 1) +++

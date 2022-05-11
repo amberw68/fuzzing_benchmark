@@ -1,0 +1,68 @@
+libpng_read_fuzzer->inflate(0x7fb1228ec2a8, 0, 0xffffffff, 0xfffffffe) = 0xfffffffe
+--- SIGSEGV (Segmentation fault) ---
+libasan.so.2->pthread_getspecific(1, 0x7fb1228dcaf0, 0x7fb1228dc9c0, 0xfffffffe) = 0x7fb1228e4000
+libasan.so.2->pthread_getspecific(1, 0, 0x7fff4fec6188, 0) = 0x7fb1228e4000
+libasan.so.2->_ZN11__sanitizer7OnPrintEPKc(0x7fb1228dbe40, 0x7fb1228dbe40, 66, 0x7fb12180367e) = 66
+libasan.so.2->isatty(2)                          = 0
+libasan.so.2->_ZN11__sanitizer7OnPrintEPKc(0x7fb1228dbe40, 0x7fb1228dbe40, 0, 0x7fb12180367e) = 0
+libasan.so.2->pthread_getspecific(1, 0x7fb1228dbe40, 0, 0x7fb12180367e) = 0x7fb1228e4000
+libasan.so.2->_ZN11__sanitizer7OnPrintEPKc(0x7fb1228dbe30, 0x7fb1228dbe30, 132, 0x7fb12180367e) = 132
+libasan.so.2->_ZN11__sanitizer7OnPrintEPKc(0x7fb1228dbe40, 0x7fb1228dbe40, 43, 0x7fb12180367e) = 43
+libasan.so.2->_ZN11__sanitizer7OnPrintEPKc(0x7fb1228dbe40, 0x7fb1228dbe40, 0, 0x7fb12180367e) = 0
+libasan.so.2->pthread_getspecific(1, 0x7fb1228dbe40, 0, 0x7fb12180367e) = 0x7fb1228e4000
+libasan.so.2->_Unwind_Backtrace(0x7fb12180dcc0, 0x7fb1228dc0b0, 256, 256 <unfinished ...>
+libgcc_s.so.1->_Unwind_Find_FDE(0x7fb120cad637, 0x7fb1228dbea8, 0, 0 <unfinished ...>
+libgcc_s.so.1->pthread_mutex_lock(0x7fb120eb2860, 0x7fb1228dbea8, 0, 0) = 0
+libgcc_s.so.1->pthread_mutex_unlock(0x7fb120eb2860, 0, 0, 0) = 0
+libgcc_s.so.1->dl_iterate_phdr(0x7fb120caddf0, 0x7fb1228dbb60, 0x7fb120eb2860, 0 <unfinished ...>
+libgcc_s.so.1->strlen("zR")                      = 2
+<... dl_iterate_phdr resumed> )                  = 1
+<... _Unwind_Find_FDE resumed> )                 = 0x7fb120cb1bd8
+libgcc_s.so.1->strlen("zR")                      = 2
+libgcc_s.so.1->pthread_once(0x7fb120eb2680, 0x7fb120caae10, 0x7fb120cad638, 0x7fb120cab41d) = 0
+libgcc_s.so.1->_Unwind_Find_FDE(0x7fb12180dd89, 0x7fb1228dbea8, 0, 0 <unfinished ...>
+libgcc_s.so.1->pthread_mutex_lock(0x7fb120eb2860, 0x7fb1228dbea8, 0, 0) = 0
+libgcc_s.so.1->pthread_mutex_unlock(0x7fb120eb2860, 0, 0, 0) = 0
+libgcc_s.so.1->dl_iterate_phdr(0x7fb120caddf0, 0x7fb1228dbd20, 0x7fb120eb2860, 0 <unfinished ...>
+libgcc_s.so.1->strlen("zR")                      = 2
+<... dl_iterate_phdr resumed> )                  = 1
+<... _Unwind_Find_FDE resumed> )                 = 0x7fb1218498f0
+libgcc_s.so.1->strlen("zR")                      = 2
+libasan.so.2->_Unwind_GetIP(0x7fb1228dbe00, 0x7fb1228dc0b0, 0x7fb12180dd8a, 0) = 0x7fb12180dd8a
+libgcc_s.so.1->_Unwind_Find_FDE(0x7fb1217f601f, 0x7fb1228dbea8, 0, 0 <unfinished ...>
+libgcc_s.so.1->pthread_mutex_lock(0x7fb120eb2860, 0x7fb1228dbea8, 0, 0) = 0
+libgcc_s.so.1->pthread_mutex_unlock(0x7fb120eb2860, 0, 0, 0) = 0
+libgcc_s.so.1->dl_iterate_phdr(0x7fb120caddf0, 0x7fb1228dbd20, 0x7fb120eb2860, 0 <unfinished ...>
+libgcc_s.so.1->strlen("zR")                      = 2
+<... dl_iterate_phdr resumed> )                  = 1
+<... _Unwind_Find_FDE resumed> )                 = 0x7fb121844898
+libgcc_s.so.1->strlen("zR")                      = 2
+libasan.so.2->_Unwind_GetIP(0x7fb1228dbe00, 0x7fb1228dc0b0, 0x7fb1217f6020, 1) = 0x7fb1217f6020
+libgcc_s.so.1->_Unwind_Find_FDE(0x7fb1217f424c, 0x7fb1228dbea8, 0, 0 <unfinished ...>
+libgcc_s.so.1->pthread_mutex_lock(0x7fb120eb2860, 0x7fb1228dbea8, 0, 0) = 0
+libgcc_s.so.1->pthread_mutex_unlock(0x7fb120eb2860, 0, 0, 0) = 0
+libgcc_s.so.1->dl_iterate_phdr(0x7fb120caddf0, 0x7fb1228dbd20, 0x7fb120eb2860, 0 <unfinished ...>
+libgcc_s.so.1->strlen("zR")                      = 2
+<... dl_iterate_phdr resumed> )                  = 1
+<... _Unwind_Find_FDE resumed> )                 = 0x7fb121844370
+libgcc_s.so.1->strlen("zR")                      = 2
+libasan.so.2->_Unwind_GetIP(0x7fb1228dbe00, 0x7fb1228dc0b0, 0x7fb121844398, 2) = 0x7fb1217f424d
+libgcc_s.so.1->_Unwind_Find_FDE(0x7fb1209084bf, 0x7fb1228dbea8, 0, 0 <unfinished ...>
+libgcc_s.so.1->pthread_mutex_lock(0x7fb120eb2860, 0x7fb1228dbea8, 0, 0) = 0
+libgcc_s.so.1->pthread_mutex_unlock(0x7fb120eb2860, 0, 0, 0) = 0
+libgcc_s.so.1->dl_iterate_phdr(0x7fb120caddf0, 0x7fb1228dbd20, 0x7fb120eb2860, 0 <unfinished ...>
+libgcc_s.so.1->strlen("zRS")                     = 3
+<... dl_iterate_phdr resumed> )                  = 1
+<... _Unwind_Find_FDE resumed> )                 = 0x7fb120a71240
+libgcc_s.so.1->strlen("zRS")                     = 3
+libasan.so.2->_Unwind_GetIP(0x7fb1228dbe00, 0x7fb1228dc0b0, 0x7fb120a712c0, 3) = 0x7fb1209084c0
+libgcc_s.so.1->_Unwind_Find_FDE(2, 0x7fb1228dbea8, 1, 0 <unfinished ...>
+libgcc_s.so.1->pthread_mutex_lock(0x7fb120eb2860, 0x7fb1228dbea8, 1, 0) = 0
+libgcc_s.so.1->pthread_mutex_unlock(0x7fb120eb2860, 0, 0, 0) = 0
+libgcc_s.so.1->dl_iterate_phdr(0x7fb120caddf0, 0x7fb1228dbd20, 0x7fb120eb2860, 0) = 0
+<... _Unwind_Find_FDE resumed> )                 = 0
+--- SIGSEGV (Segmentation fault) ---
+libasan.so.2->pthread_getspecific(1, 0x7fb1228db830, 0x7fb1228db700, 1) = 0x7fb1228e4000
+libasan.so.2->_ZN11__sanitizer7OnPrintEPKc(0x7fb1228dab60, 0x7fb1228dab60, 78, 0x7fb12180367e) = 78
+libasan.so.2->pthread_getspecific(1, 0x7fb1228dab60, 78, 0x7fb12180367e) = 0x7fb1228e4000
++++ exited (status 1) +++

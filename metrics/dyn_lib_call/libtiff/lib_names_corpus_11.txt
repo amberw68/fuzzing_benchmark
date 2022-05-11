@@ -1,0 +1,3 @@
+libjbig.so.0
+liblzma.so.5
+tiffcp
