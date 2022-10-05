@@ -1,0 +1,351 @@
+malloc(0x591)
+  returns 0x7f640a5d2170
+malloc(0x491)
+  returns 0x7f640a5d2710
+malloc(0x10)
+  returns 0x7f640a5d2bb0
+malloc(0x9e)
+  returns 0x7f640a5d2bc0
+malloc(0x28)
+  returns 0x7f640a5d2c60
+malloc(0x140)
+  returns 0x7f640a5d2c90
+malloc(0x26)
+  returns 0x7f640a5d2dd0
+free(0)
+malloc(0x4a0)
+  returns 0x7f63f5e14000
+malloc(0x26)
+  returns 0x7f63f5e144a0
+malloc(0x20)
+  returns 0x7f63f5e144d0
+free(0)
+malloc(0x49a)
+  returns 0x7f63f5e144f0
+malloc(0x20)
+  returns 0x7f63f5e14990
+malloc(0x23)
+  returns 0x7f63f5e149b0
+free(0)
+malloc(0x49d)
+  returns 0x7f63f5e149e0
+malloc(0x23)
+  returns 0x7f63f5e14e80
+malloc(0x21)
+  returns 0x7f63f5e14eb0
+free(0)
+malloc(0x49b)
+  returns 0x7f63f5e14ee0
+malloc(0x21)
+  returns 0x7f63f5e15380
+malloc(0x58)
+  returns 0x7f63f5e153b0
+malloc(0x28)
+  returns 0x7f63f5e15410
+malloc(0x26)
+  returns 0x7f63f5e15440
+free(0)
+malloc(0x4a0)
+  returns 0x7f63f5e15470
+malloc(0x26)
+  returns 0x7f63f5e15910
+malloc(0x38)
+  returns 0x7f63f5e15940
+malloc(0x38)
+  returns 0x7f63f5e15980
+malloc(0x38)
+  returns 0x7f63f5e159c0
+malloc(0x78)
+  returns 0x7f63f5e15a00
+malloc(0xc0)
+  returns 0x7f63f5e15a80
+malloc(0x48)
+  returns 0x7f63f5e15b40
+malloc(0x108)
+  returns 0x7f63f5e15b90
+malloc(0x300)
+  returns 0x7f63f5e15ca0
+malloc(0xc0)
+  returns 0x7f63f4fa2000
+malloc(0xf0)
+  returns 0x7f63f4fa20c0
+malloc(0x90)
+  returns 0x7f63f4fa21b0
+malloc(0x1c8)
+  returns 0x7f63f4fa2240
+malloc(0x420)
+  returns 0x7f63f4fa2410
+malloc(0x1148)
+  returns 0x7f63f4fa2830
+malloc(0x120)
+  returns 0x7f63f4fa3980
+malloc(0x228)
+malloc(0x78)
+  returns 0x5609df360490
+malloc(0x400)
+  returns 0x5609df360510
+free(0x5609df360490)
+free(0x5609df360490)
+free(0x5609df360510)
+free(0x5609df360260)
+free(0)
+free(0)
+malloc(0x5)
+  returns 0x5609df360920
+free(0x5609df360920)
+malloc(0x78)
+  returns 0x5609df360490
+malloc(0xc)
+  returns 0x5609df360920
+malloc(0x308)
+  returns 0x5609df360940
+malloc(0x70)
+  returns 0x5609df360c50
+malloc(0x538)
+  returns 0x5609df360cd0
+malloc(0xd8)
+  returns 0x5609df361210
+malloc(0x1b0)
+  returns 0x5609df3612f0
+malloc(0x68)
+  returns 0x5609df3614b0
+malloc(0x58)
+  returns 0x5609df361520
+malloc(0x78)
+  returns 0x5609df361580
+malloc(0xa8)
+  returns 0x5609df361600
+malloc(0x68)
+  returns 0x5609df3616b0
+malloc(0x50)
+  returns 0x5609df361720
+malloc(0xc0)
+  returns 0x5609df361780
+malloc(0xc)
+  returns 0x5609df361850
+malloc(0xc)
+  returns 0x5609df361870
+malloc(0xc)
+  returns 0x5609df361890
+malloc(0xc)
+  returns 0x5609df3618b0
+malloc(0xc)
+  returns 0x5609df3618d0
+malloc(0xc)
+  returns 0x5609df3618f0
+malloc(0xc)
+  returns 0x5609df361910
+malloc(0xc)
+  returns 0x5609df361930
+malloc(0xc)
+  returns 0x5609df361950
+malloc(0xc)
+  returns 0x5609df361970
+malloc(0xc)
+  returns 0x5609df361990
+malloc(0xc)
+  returns 0x5609df3619b0
+malloc(0xc)
+  returns 0x5609df3619d0
+free(0)
+free(0)
+malloc(0x22)
+  returns 0x5609df3619f0
+malloc(0xa)
+  returns 0x5609df361a20
+malloc(0x38)
+  returns 0x5609df361a40
+malloc(0x38)
+  returns 0x5609df361a80
+malloc(0x80)
+  returns 0x5609df361ac0
+malloc(0x4e20)
+  returns 0x5609df361b50
+malloc(0x20)
+  returns 0x5609df366980
+malloc(0x2)
+  returns 0x5609df3669b0
+malloc(0x8030)
+  returns 0x5609df3669d0
+malloc(0x11)
+  returns 0x5609df36ea10
+malloc(0xf)
+  returns 0x5609df36ea30
+malloc(0xe)
+  returns 0x5609df36ea50
+malloc(0x10)
+  returns 0x5609df36ea70
+malloc(0xa)
+  returns 0x5609df36ea90
+malloc(0xb)
+  returns 0x5609df36eab0
+malloc(0xd)
+  returns 0x5609df36ead0
+malloc(0x12)
+  returns 0x5609df36eaf0
+malloc(0x18)
+  returns 0x5609df36eb10
+malloc(0x14)
+  returns 0x5609df36eb30
+malloc(0xc)
+  returns 0x5609df36eb50
+malloc(0xc)
+  returns 0x5609df36eb70
+malloc(0xb)
+  returns 0x5609df36eb90
+malloc(0x18)
+  returns 0x5609df36ebb0
+malloc(0xe)
+  returns 0x5609df36ebd0
+malloc(0xb)
+  returns 0x5609df36ebf0
+malloc(0x9)
+  returns 0x5609df36ec10
+malloc(0xe)
+  returns 0x5609df36ec30
+malloc(0x9)
+  returns 0x5609df36ec50
+malloc(0xa)
+  returns 0x5609df36ec70
+malloc(0xb)
+  returns 0x5609df36ec90
+malloc(0x10)
+  returns 0x5609df36ecb0
+malloc(0x13)
+  returns 0x5609df36ecd0
+malloc(0x12)
+  returns 0x5609df36ecf0
+malloc(0xb)
+  returns 0x5609df36ed10
+malloc(0xc)
+  returns 0x5609df36ed30
+malloc(0xb)
+  returns 0x5609df36ed50
+malloc(0x9)
+  returns 0x5609df36ed70
+malloc(0xf)
+  returns 0x5609df36ed90
+malloc(0x10)
+  returns 0x5609df36edb0
+malloc(0x1b)
+  returns 0x5609df36edd0
+malloc(0x14)
+  returns 0x5609df36ee00
+malloc(0xf)
+  returns 0x5609df36ee20
+malloc(0xd)
+  returns 0x5609df36ee40
+malloc(0xe)
+  returns 0x5609df36ee60
+malloc(0x11)
+  returns 0x5609df36ee80
+malloc(0x11)
+  returns 0x5609df36eea0
+malloc(0x1b)
+  returns 0x5609df36eec0
+malloc(0xc)
+  returns 0x5609df36eef0
+malloc(0xe)
+  returns 0x5609df36ef10
+malloc(0xd)
+  returns 0x5609df36ef30
+malloc(0x10)
+  returns 0x5609df36ef50
+malloc(0xc)
+  returns 0x5609df36ef70
+malloc(0xb)
+  returns 0x5609df36ef90
+malloc(0xe)
+  returns 0x5609df36efb0
+malloc(0xc)
+  returns 0x5609df36efd0
+malloc(0xc)
+  returns 0x5609df36eff0
+malloc(0xe)
+  returns 0x5609df36f010
+malloc(0xb)
+  returns 0x5609df36f030
+free(0x5609df3669d0)
+free(0)
+malloc(0x498)
+  returns 0x5609df3669d0
+malloc(0x438)
+  returns 0x5609df366e70
+malloc(0x2058)
+  returns 0x5609df3672b0
+malloc(0x400)
+  returns 0x5609df360510
+free(0x5609df3669b0)
+free(0)
+free(0x5609df366980)
+free(0x5609df360510)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
+free(0)
