@@ -450,28 +450,27 @@ pdf_parse_link_action(fz_context *ctx, pdf_document *doc, pdf_obj *action, int p
 		return NULL;
 
 	obj = pdf_dict_get(ctx, action, PDF_NAME(S));
+
+	// Yuchen Edit
+	/* URI entries are ASCII strings */
+	const char *uri = pdf_dict_get_text_string(ctx, action, PDF_NAME(URI));
+	if (!fz_is_external_link(ctx, uri))
+	{
+		pdf_obj *uri_base_obj = pdf_dict_getp(ctx, pdf_trailer(ctx, doc), "Root/URI/Base");
+		const char *uri_base = uri_base_obj ? pdf_to_text_string(ctx, uri_base_obj) : "file://";
+		// YIFAN_FINAL : line468/469/470 changed
+		signed char base_len = strlen(uri_base);
+		signed char uri_len = strlen(uri);
+		char *new_uri = Memento_label(fz_malloc(ctx, uri_base + uri + 1), "link_action");
+		strcpy(new_uri, uri_base);
+		strcat(new_uri, uri);
+		return new_uri;
+	}
+	
 	if (pdf_name_eq(ctx, PDF_NAME(GoTo), obj))
 	{
 		dest = pdf_dict_get(ctx, action, PDF_NAME(D));
 		return pdf_parse_link_dest(ctx, doc, dest);
-	}
-	else if (pdf_name_eq(ctx, PDF_NAME(URI), obj))
-	{
-		/* URI entries are ASCII strings */
-		const char *uri = pdf_dict_get_text_string(ctx, action, PDF_NAME(URI));
-		if (!fz_is_external_link(ctx, uri))
-		{
-			pdf_obj *uri_base_obj = pdf_dict_getp(ctx, pdf_trailer(ctx, doc), "Root/URI/Base");
-			const char *uri_base = uri_base_obj ? pdf_to_text_string(ctx, uri_base_obj) : "file://";
-			// YIFAN_FINAL : line468/469/470 changed
-			signed char base_len = strlen(uri_base);
-			signed char uri_len = strlen(uri)
-			char *new_uri = Memento_label(fz_malloc(ctx, uri_base + uri + 1), "link_action");
-			strcpy(new_uri, uri_base);
-			strcat(new_uri, uri);
-			return new_uri;
-		}
-		return fz_strdup(ctx, uri);
 	}
 	else if (pdf_name_eq(ctx, PDF_NAME(Launch), obj))
 	{

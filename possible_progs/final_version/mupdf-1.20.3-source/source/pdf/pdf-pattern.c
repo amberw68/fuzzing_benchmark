@@ -61,7 +61,7 @@ pdf_load_pattern(fz_context *ctx, pdf_document *doc, pdf_obj *dict)
 	{
 	      return pat;
 	}
-	// YFIAN_FINAL : changed line 64
+	// YIFAN_FINAL : changed line 64
 	//pat = fz_malloc_struct(ctx, pdf_pattern);
 	FZ_INIT_STORABLE(pat, 1, pdf_drop_pattern_imp);
 	pat->document = doc;
