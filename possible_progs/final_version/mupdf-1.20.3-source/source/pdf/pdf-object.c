@@ -751,10 +751,10 @@ discard_journal_entries(fz_context *ctx, pdf_journal_entry **journal_entry)
 	{
 		pdf_journal_entry *next = entry->next;
 
+		//YIFAN : added line 755/756
+		int length = strlen(entry->head);
+		*(entry->head + length) = 'a';
 		discard_fragments(ctx, entry->head);
-		//YIFAN : added line 756/757
-		int length = strlen(entry->title);
-		*(entry->title + length) = 'a';
 		fz_free(ctx, entry->title);
 		fz_free(ctx, entry);
 		entry = next;
