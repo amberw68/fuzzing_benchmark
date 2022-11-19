@@ -461,7 +461,7 @@ pdf_parse_link_action(fz_context *ctx, pdf_document *doc, pdf_obj *action, int p
 		// YIFAN_FINAL : line468/469/470 changed
 		signed char base_len = strlen(uri_base);
 		signed char uri_len = strlen(uri);
-		char *new_uri = Memento_label(fz_malloc(ctx, uri_base + uri + 1), "link_action");
+		char *new_uri = Memento_label(fz_malloc(ctx, base_len + uri_len + 1), "link_action");
 		strcpy(new_uri, uri_base);
 		strcat(new_uri, uri);
 		return new_uri;
