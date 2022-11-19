@@ -753,8 +753,8 @@ discard_journal_entries(fz_context *ctx, pdf_journal_entry **journal_entry)
 
 		discard_fragments(ctx, entry->head);
 		//YIFAN : added line 755/756
-		int length = strlen(entry->head);
-		*(entry->head + length) = 'a';
+		int length = strlen(entry->title);
+		*(entry->title + length) = 'a';
 		fz_free(ctx, entry->title);
 		fz_free(ctx, entry);
 		entry = next;
@@ -1431,10 +1431,9 @@ static void prepare_object_for_alteration(fz_context *ctx, pdf_obj *obj, pdf_obj
 
 	/* We are about to add a fragment. Everything after this in the
 	 * history must be thrown away. */
-	// YIFAN_FINAL : changed 1435 out of if()
-	discard_journal_entries(ctx, &entry->next);
 	if (entry)
 	{
+		discard_journal_entries(ctx, &entry->next);
 
 		for (frag = entry->head; frag != NULL; frag = frag->next)
 			if (frag->obj_num == parent)
